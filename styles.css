@@ -1,0 +1,76 @@
+body {
+    background: rgb(172,167,255);
+    background: linear-gradient(91deg, rgba(172,167,255,1) 0%, rgba(3,21,153,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #17181a;
+    border-radius: 30px;
+    transform: scale(1); /* Adaugă scalare inițială de 1 (nici o scalare) */
+    transition: transform 0.3s; /* Adaugă o tranziție pentru scalare */
+}
+
+@media (max-width: 600px) {
+    .calculator {
+        transform: scale(1.5);
+    }
+}
+
+#display {
+    width: 250px;
+    height: 140px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    background: #17181a;
+    margin-top: 30px;
+    color: white;
+    font-weight: bold;
+}
+  
+button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    background: #303136;
+    border: none;
+    border-radius: 20px;
+    color: #2891da;
+    font-weight: bold;
+    position: relative;
+    top: 40px;
+}
+button:hover {
+    background: #4c4d55;
+    transition: background 0.5s;
+}
+button#sign{
+    background: #005db2;
+    color: #1486df;
+    font-weight: bold;
+}
+button#sign:hover {
+    background: #0077e7;
+    color: #0b60a1;
+    transition: background 0.5s;
+}
+button#equal {
+    background-color: #1991ff;
+    font-weight: bold;
+    color: #8cc8ff;
+}
+button#equal:hover{
+    background: #0077e7;
+    color: #0b60a1;
+    transition: background 0.5s;
+}
